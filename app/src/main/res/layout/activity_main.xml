@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:id="@+id/tvCelcius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Celcius"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"/>
+
+    <EditText
+        android:id="@+id/edtCelcius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvCelcius"
+        android:layout_marginLeft="28dp"
+        android:inputType="numberDecimal"
+        android:textSize="15sp"/>
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_below="@id/edtCelcius"
+        android:text="Konversi"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/tvKelvin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kelvin"
+        android:textSize="20sp"
+        android:layout_below="@id/btnConvert"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"/>
+
+    <EditText
+        android:id="@+id/edtKelvin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvKelvin"
+        android:layout_marginLeft="40dp"
+        android:textSize="15sp"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/btnConvert"/>
+
+    <TextView
+        android:id="@+id/tvFarenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Farenheit"
+        android:textSize="20sp"
+        android:layout_below="@id/edtKelvin"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"/>
+
+    <EditText
+        android:id="@+id/edtFarenheit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtKelvin"
+        android:textSize="15sp"
+        android:layout_marginLeft="2dp"
+        android:inputType="numberDecimal"
+        android:layout_toRightOf="@id/tvFarenheit"/>
+
+    <TextView
+        android:id="@+id/tvReamur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Reamur"
+        android:layout_below="@id/edtFarenheit"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"/>
+
+    <EditText
+        android:id="@+id/edtReamur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:inputType="numberDecimal"
+        android:layout_marginLeft="26dp"
+        android:layout_below="@+id/edtFarenheit"
+        android:layout_toRightOf="@id/tvReamur"/>
+</RelativeLayout>
